@@ -1,0 +1,26 @@
+
+h1{
+  font-family: "Alegreya", serif;
+}
+
+p{
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.form-section{
+  background-color: #f2f2f2;
+}
+
+picture{
+  transition: all 1.5s ease-in-out;
+}
+
+.slider{
+  transform: translateX(100%);
+}
+
+.signUp,
+.logIn{
+  transition: all 0.5s ease-in-out;
+}

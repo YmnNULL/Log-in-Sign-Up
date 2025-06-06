@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Gidole&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,339;1,339&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="vendor/fontawosome/all.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <!-- My Css -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Log in | Sign Up </title>
+</head>
+
+<body>
+
+  <div class="container-fluid vh-100">
+    <div class="row align-items-center h-100">
+      <div class="col-6 h-100 d-flex justify-content-center form-section position-relative ">
+        <picture class="d-flex align-items-center position-absolute h-100 ">
+          <img src="illustration-16.webp" alt="photo" class="img-fluid" />
+        </picture>
+
+        <div class="w-50 d-flex flex-column align-items-center justify-content-center signUp opacity-0 d-none">
+          <h1 class="mb-3">Sign Up</h1>
+          <div class="w-100 mt-4">
+            <input type="text" placeholder="User Name" class="form-control mb-3" id="userNameInput">
+
+            <input type="email" placeholder="Email" class="form-control mb-3" id="emailInputSignUp">
+            <div class="alert alert-danger p-3 mb-3 d-none" role="alert">
+              Please enter a valid email address.
+            </div>
+            <input type="password" placeholder="Password" class="form-control mb-3" id="passwordInputSignUp">
+            <div class="alert alert-danger p-3 mb-3 d-none" role="alert">
+              <ul class="mb-0 list-unstyled px-2">
+                <li>Password must be at least 8 characters long</li>
+                <li>Must contain at least one Capital letter</li>
+                <li>Must contain at least one Smaller letter</li>
+                <li>Must contain at least one number</li>
+                <li>Must contain at least one special character</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary w-100 mb-3" id="signUpBtn">Sign Up</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-6 h-100 d-flex justify-content-center form-section ">
+        <div class="d-flex flex-column align-items-center justify-content-center logIn">
+          <h1 class="mb-3">Welcome to Our Website</h1>
+          <p>Please log in or sign up to continue</p>
+          <div class="w-100 mt-4">
+            <input type="text" placeholder="Email" class="form-control mb-3" id="emailInputLogin">
+            <div class="alert alert-danger p-3 mb-3 d-none" role="alert">
+              Please enter a valid email address.
+            </div>
+            <input type="password" placeholder="Password" class="form-control mb-3" id="passwordInputLogin">
+            <div class="alert alert-danger p-3 mb-3 d-none" role="alert">
+              <ul class="mb-0 list-unstyled px-2">
+                <li>Password must be at least 8 characters long</li>
+                <li>Must contain at least one Capital letter</li>
+                <li>Must contain at least one Smaller letter</li>
+                <li>Must contain at least one number</li>
+                <li>Must contain at least one special character</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary w-100 mb-3" id="logInBtn">Log In</button>
+          </div>
+
+          <p>Forgot password? <a href="#" class="text-decoration-none">Click here</a></p>
+          <p>Don't have an account? <a href="#" class="text-decoration-none" id="signUpLink">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- My JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
