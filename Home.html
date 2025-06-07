@@ -4,11 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="vendor/fontawosome/all.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <!-- My Css -->
+  <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
 </head>
 
 <body>
-  <h1>Hello</h1>
+  <div class="container">
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100">
+      <h1 class="display-1">
+        Hello
+        <span class="userName"></span>
+      </h1>
+      <p class="h2">Welcome to our website</p>
+      <button class="btn btn-danger mt-5 px-5">Log Out</button>
+
+    </div>
+  </div>
+  <!-- Bootstrap -->
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- My JS -->
+  <script>
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (currentUser) {
+      document.querySelector(".userName").textContent = currentUser.userName;
+    } else {
+      document.querySelector(".userName").textContent = "Guest";
+    }
+    document.querySelector(".btn").addEventListener("click", function () {
+      localStorage.removeItem("currentUser");
+      window.location.href = "index.html";
+    });
+  </script>
 </body>
 
 </html>

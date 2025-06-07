@@ -1,4 +1,6 @@
-
+body{
+  background-color: #f2f2f2;
+}
 h1{
   font-family: "Alegreya", serif;
 }
@@ -8,16 +10,43 @@ p{
   font-size: 20px;
 }
 
-.form-section{
-  background-color: #f2f2f2;
+.my-w-50{
+  max-width: 400px !important;
 }
+
+@media (max-width: 768px) {
+  .w-md-75{
+    width: 75% !important;
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+  .form-section{
+    height: 100vh;
+  }
+}
+
 
 picture{
   transition: all 1.5s ease-in-out;
 }
 
+@media screen and (max-width: 767px) {
+  picture{
+    height: 100vh;
+    max-width: 450px;
+  }
+}
+
 .slider{
   transform: translateX(100%);
+}
+
+@media (max-width: 767px) {
+  .slider{
+    transform: translateY(100%);
+  }
 }
 
 .signUp,

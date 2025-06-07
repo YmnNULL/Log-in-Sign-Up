@@ -23,16 +23,16 @@
 
   <div class="container-fluid vh-100">
     <div class="row align-items-center h-100">
-      <div class="col-6 h-100 d-flex justify-content-center form-section position-relative ">
-        <picture class="d-flex align-items-center position-absolute h-100 ">
+      <div class="col-md-6 d-flex justify-content-center form-section position-relative ">
+        <picture class="d-flex align-items-center position-relative h-100 ">
           <img src="illustration-16.webp" alt="photo" class="img-fluid" />
         </picture>
 
-        <div class="w-50 d-flex flex-column align-items-center justify-content-center signUp opacity-0 d-none">
-          <h1 class="mb-3">Sign Up</h1>
+        <div
+          class="w-md-75 my-w-50 text-center mb-3 d-flex flex-column align-items-center justify-content-center signUp opacity-0 d-none">
+          <h1 class="text-capitalize">Sign up now and start your journey with us</h1>
           <div class="w-100 mt-4">
             <input type="text" placeholder="User Name" class="form-control mb-3" id="userNameInput">
-
             <input type="email" placeholder="Email" class="form-control mb-3" id="emailInputSignUp">
             <div class="alert alert-danger p-3 mb-3 d-none" role="alert">
               Please enter a valid email address.
@@ -52,25 +52,13 @@
         </div>
 
       </div>
-      <div class="col-6 h-100 d-flex justify-content-center form-section ">
+      <div class="col-md-6 d-flex justify-content-center form-section text-center">
         <div class="d-flex flex-column align-items-center justify-content-center logIn">
-          <h1 class="mb-3">Welcome to Our Website</h1>
+          <h1 class=" text-capitalize mb-3">Welcome to Our Website</h1>
           <p>Please log in or sign up to continue</p>
           <div class="w-100 mt-4">
             <input type="text" placeholder="Email" class="form-control mb-3" id="emailInputLogin">
-            <div class="alert alert-danger p-3 mb-3 d-none" role="alert">
-              Please enter a valid email address.
-            </div>
             <input type="password" placeholder="Password" class="form-control mb-3" id="passwordInputLogin">
-            <div class="alert alert-danger p-3 mb-3 d-none" role="alert">
-              <ul class="mb-0 list-unstyled px-2">
-                <li>Password must be at least 8 characters long</li>
-                <li>Must contain at least one Capital letter</li>
-                <li>Must contain at least one Smaller letter</li>
-                <li>Must contain at least one number</li>
-                <li>Must contain at least one special character</li>
-              </ul>
-            </div>
             <button class="btn btn-primary w-100 mb-3" id="logInBtn">Log In</button>
           </div>
 
