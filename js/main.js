@@ -5,7 +5,7 @@ const userNameSignUp = document.getElementById("userNameInput");
 const emailSignUp = document.getElementById("emailInputSignUp");
 const passwordSignUp = document.getElementById("passwordInputSignUp");
 
-const regexEmail = /^(\w)+@(\w){1,}\.\w+$/;
+const regexEmail = /^[\w.]+@[\w]+\.\w+$/;
 const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
 
 const logInBtn = document.getElementById("logInBtn");
